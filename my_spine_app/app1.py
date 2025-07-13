@@ -9,7 +9,7 @@ st.title("🦴 척추 질환별 예방 및 강화 스트레칭")
 st.write("")
 
 # 이미지 표시
-image = Image.open("spine_image.png")  # 그림은 직접 준비해 주세요
+image = Image.open("my_spine_app/my_spine_app/spine_image.png")  # 그림은 직접 준비해 주세요
 st.image(image, caption="척추 부위별 증상 목록", use_column_width=True)
 
 st.markdown("---")
