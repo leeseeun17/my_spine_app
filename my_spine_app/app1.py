@@ -1,6 +1,18 @@
 import streamlit as st
 from PIL import Image
 
+import os
+from PIL import Image
+
+# 현재 파일(app1.py)의 폴더 위치
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# 이미지 경로 (app1.py 위치 기준)
+image_path = os.path.join(BASE_DIR, "spine_image.png")
+
+image = Image.open(image_path)
+
+
 st.set_page_config(page_title="척추 질환 안내", layout="wide")
 st.title("🦴 척추 질환별 예방 및 강화 스트레칭")
 
